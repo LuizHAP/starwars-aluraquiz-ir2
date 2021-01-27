@@ -22,7 +22,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Star Wars Quiz</title>
+        <title>{db.title}</title>
+        <meta property="og:image" content={window.location.href + db.bg} />
+        <meta name="title" content={db.title} />
+        <meta name="description" content={db.description} />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://starwars-aluraquiz-ir2.vercel.app"
+        />
+        <meta property="og:title" content={db.title} />
+        <meta property="og:description" content={db.description} />
       </Head>
       <QuizBackground backgroundImage={db.bg}>
         <QuizContainer>
