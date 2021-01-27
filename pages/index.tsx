@@ -23,7 +23,7 @@ export default function Home() {
     <>
       <Head>
         <title>{db.title}</title>
-        <meta property="og:image" content={window.location.href + db.bg} />
+        <meta property="og:image" content={db.bg} />
         <meta name="title" content={db.title} />
         <meta name="description" content={db.description} />
         <meta property="og:type" content="website" />
